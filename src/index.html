@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Product Listing Page</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <button aria-label="Open Menu" class="hamburger js-mobile-menu" aria-expanded="false" aria-controls="navListWrap">
+                <span class="hamburger-menu menu1"></span>
+                <span class="hamburger-menu menu2"></span>
+                <span class="hamburger-menu menu3"></span>
+            </button>
+            <a class="logo" href="#">Venia</a>
+            <nav class="main-nav" id="mainMenuWrap" role="navigation">
+                <ul class="main-nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Smart Gear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Accessories</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart-sec">
+                <a href="javascript:void(0)" class="cart" aria-label="Cart with 10 items">
+                    <img src="assets/images/market.png" alt="Cart Icon" class="cart-icon-img">
+                    <span class="cart-count">10</span>
+                </a>
+            </div>                
+        </div>
+
+    </header>
+    <div class="mainBanner">
+        <div class="contentSec">Men’s <br/>Outerwear</div>
+        <div class="image-Wrap">
+            <img src="assets/images/banner.png" alt="Men's Outerwear" c>
+            <div class="search-Wrap">
+                <div class="search-input-wrap">
+                    <input id="search-input" type="text" placeholder="Search" class="search-input">
+                    <button class="search-icon search-btn">
+                        <img src="assets/images/search.png" alt="Cart Icon" >
+                    </button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="bs-product">
+        <div class="container">
+            <div class="sec-cont">
+                <div class="mainProductSec">
+                    <div class="Filter-wrap">
+                        <ul class="breadcrumb" aria-label="Breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link">Clothing</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link">Women's</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link breadcrumb--active">Outerwear</a>
+                            </li>
+                        </ul>
+                        <div class="filter" id="productFilter">
+                            <button aria-label="Close Filters" class="filter-close">x</button>
+                            <h2 class="filter-heading" id="productFilterTitle">Filters</h2>
+                            <a href="javascript:void(0)" class="filter-clear" id="clearFilters">Clear All</a>
+                            <fieldset>
+                                <div class="filter-subHeading">Categories</div>
+                                <ul class="filter-list">
+                                    <li class="filter-item">
+                                        <div class="bs-checkbox typ-plp">
+                                            <input class="checkbox-input" type="checkbox" name="categories-type" id="jewelery" value="jewelery">
+                                            <label for="jewelery">Jewellery</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="bs-checkbox typ-plp">
+                                            <input class="checkbox-input" type="checkbox" name="categories-type" id="electronics" value="electronics">
+                                            <label for="electronics">Electronics</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="bs-checkbox typ-plp">
+                                            <input class="checkbox-input" type="checkbox" name="categories-type" id="mens-clothing" value="men's clothing">
+                                            <label for="mens-clothing">Men's Clothing</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="bs-checkbox typ-plp">
+                                            <input class="checkbox-input" type="checkbox" name="categories-type" id="women-clothing" value="women's clothing">
+                                            <label for="women-clothing">Women's Clothing</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                    </div>
+                     <div class="product-wrap">
+                        <ul class="breadcrumb typ-mobile" aria-label="Breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link">Clothing</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link">Women's</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="breadcrumb-link breadcrumb--active">Outerwear</a>
+                            </li>
+                        </ul>
+                        <div class="product-top">                                       
+                            <span class="product-result"><span>38</span> Results</span>
+                            <ul class="product-top-list">
+                                <li class="product-top-item">
+                                    <button class="product-list-icon js-mobile-filter" aria-label="Filter Results">
+                                        <img src="assets/images/sliders.svg" class="icon-img" alt="Filter Icon"/>
+                                        <span class="icon-label">Filter Results</span>
+                                    </button>
+                                </li>
+                                <li class="product-block">
+                                    <div class="product-sort">
+                                        <label for="sorting" class="hide-product" id="sortingLabel">
+                                            <img src="assets/images/sliders.svg" class="icon-slide2" alt="Sort Icon"/>
+                                            Sort by
+                                        </label>
+                                        <select class="product-select" name="sort" id="sorting">
+                                            <option class="product-option" value="LowToHigh">Low to High Price</option>
+                                            <option class="product-option" value="HighToLow">High to Low Price</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="product-list" id="productList">
+                        </ul>
+                        <ul class="product-pagination">
+                            <!-- Pagination buttons will be injected here by JavaScript -->
+                        </ul>  
+                        <div class="product-load-more-sec">
+                            <!-- <ul class="product__pagination">
+                            </ul>   -->
+                            <button id="loadMoreProducts" class="product-load-more-Btn">Load More</button>
+                            <button id="resetProducts" style="display:none" class="product-load-more-Btn">Reset</button>
+                        </div>                                  
+                    </div>                                 
+                </div>
+            </div>
+        </div>
+        <div class="loader" id="loader">
+            <div class="loading one"></div>
+            <div class="loading two"></div>
+            <div class="loading three"></div>
+            <div class="loading four"></div>
+        </div>
+             
+        </div> 
+    </div>
+
+
+
+
+    <footer role="footer">
+        <div class="container">
+          <ul class="footerMenuList">
+            <li class="footer-Menu-ListItem">
+              <h3 class="footerHeading">Account</h3>
+              <ul class="footer-list">
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Sign In</a></li>
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Register</a></li>
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Order Status</a></li>
+              </ul>
+            </li>
+            <li class="footer-Menu-ListItem">
+              <h3 class="footerHeading">About Us</h3>
+              <ul class="footer-list">
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Our Story</a></li>
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Careers</a></li>
+              </ul>
+            </li>
+            <li class="footer-Menu-ListItem">
+              <h3 class="footerHeading">Help</h3>
+              <ul class="footer-list">
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Contact Us</a></li>
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Order Status</a></li>
+                <li class="footer-list-item"><a href="javascript:void(0)" class="footer-link">Returns</a></li>
+              </ul>
+            </li>
+            <li class="footer-Menu-ListItem">
+              <h3 class="footerHeading">Follow Us!</h3>
+              <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <ul class="footer-social-list">
+                <li class="footer-social-list-item"><a href="javascript:void(0)" class="footer-social-link"><img src="assets/images/instagram.svg" alt="Instagram Icon" class="footer-social-icon"></a></li>
+                <li class="footer-social-list-item"><a href="javascript:void(0)" class="footer-social-link"><img src="assets/images/facebook.svg" alt="Facebook Icon" class="footer-social-icon"></a></li>
+                <li class="footer-social-list-item"><a href="javascript:void(0)" class="footer-social-link"><img src="assets/images/twitter.svg" alt="Twitter Icon" class="footer-social-icon"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-info">
+            <div class="container">
+                <ul class="footer-info-list">
+                    <div class="footer-info-item footer-logo">
+                        <a href="javascript:void(0)" class="footer-logo-link">VENIA</a>
+                    </div>
+                    <div class="footer-info-item footer-copyright">
+                        <p class="footer-copyright-text">© Company Name Address Ave, City Name, State ZIP</p>
+                    </div>
+                    <ul class="footer-bottom-item footer-links">
+                        <li class="footer-links-item"><a href="javascript:void(0)" class="footer-link">Terms of Use</a></li>
+                        <li class="footer-links-item"><a href="javascript:void(0)" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
