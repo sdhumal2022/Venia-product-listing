@@ -96,6 +96,12 @@ const PLPController = {
                 PLPController.getProducts();
                 PLPController.filterProducts();
                 PLPController.displayProducts(currentPage);
+                loader.classList.remove('loader-completed');
+                setTimeout(function() {
+                    loader.classList.add('loader-completed');
+                }, 250);
+                
+
                 // PLPController.setupPagination();
                 // document.querySelector('.product__pagination').style.visibility = 'hidden';
 
